@@ -1,0 +1,143 @@
+:root {
+  --normal-font-size: 1.25rem;
+  --medium-font: 1.5rem;
+  --large-font: 2rem;
+
+  --primary-color: #222831;
+
+  --text-color: #e4e4e4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #393e46;
+}
+
+.button {
+    font-weight: bold;
+    padding: 0.5rem;
+    border-width: 4px;
+    border-style: none;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.add-book {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 3rem;
+  border-radius: 3%;
+  font-size: 1rem;
+}
+
+.add-book > h1 {
+  margin: auto;
+}
+
+.add-book-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.button-wrap-add-book {
+  margin-top: 2.5rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.add-book-button {
+  width: 100px;
+  background-color: #00adb5;
+  color: #eeeeee;
+}
+
+/* Search  */
+
+.search-book {
+  margin-top: 3rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 3rem;
+  border-radius: 3%;
+  font-size: 1rem;
+}
+
+.search-book > form > input {
+  width: 100%;
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 3%;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+
+
+/* Bookshelf  */
+
+.bookshelf {
+  display: grid;
+  grid-gap: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: var(--primary-color);
+  padding: 3rem 1rem;
+  color: var(--text-color);
+  width: 100%;
+}
+
+.books {
+    display: grid;
+    grid-gap: 1.5rem;
+}
+
+.book-header {
+    font-weight: bold;
+}
+
+.book, .book-header {
+  display: grid;
+  grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr) minmax(
+      auto,
+      1fr
+    ) minmax(auto, 1fr);
+  align-content: center;
+  align-items: center;
+}
+
+.button-wrap-book {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.book-button {
+    min-width: 100px;
+    background-color: #00adb5;
+    color: #eeeeee;
+}

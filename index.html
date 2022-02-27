@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Pengelolaan Data</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="add-book">
+            <h1>ADD NEW BOOK</h1>
+            <form class="add-book-form" action="#" id="form">
+                <label for="">Title</label>
+                <input type="text" name="title" id="title" required>
+                <label for="">Author</label>
+                <input type="text" name="author" id="author" required>
+                <label for="">Publish Year</label>
+                <input type="number" name="publish_year" id="year" required>
+                <label for="is-complete">Already Readed?</label>
+                <input type="checkbox" name="is_complete" id="isComplete">
+                <div class="button-wrap-add-book">
+                    <input class="add-book-button button" id="submit-book" type="submit" name="Submit" value="ADD">
+                </div>
+
+            </form>
+        </div>
+
+        <div class="search-book">
+            <h1>SEARCH BOOK</h1>
+            <form action="#" id="search">
+                <label for="search-title">TITLE</label>
+                <input type="text" name="search" id="search-title">
+                <div class="button-wrap-search-book">
+                    <button class="search-book-button button" type="submit" name="submit" onsubmit="searchBook()">SEARCH</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="test" id="debuging">
+
+        </div>
+
+        <div class="bookshelf unread">
+            <h1>UNREAD</h1>
+            <div class="book-header">
+                <div class="id">ID</div>
+                <div class="title">TITLE</div>
+                <div class="author">AUTHOR</div>
+                <div class="year">PUBLISH</div>
+
+                <div class="options">OPTIONS</div>
+            </div>
+            <div class="books" id="unread">
+
+
+                <!-- <div class="book">
+                    <div class="id">1</div>
+                    <div class="title">Beautiful Girl</div>
+                    <div class="author">Lofi</div>
+                    <div class="year">1999</div>
+
+                    <div class="button-wrap-book">
+                        <button class="button book-button">ALREADY READ</button>
+                        <button class="button book-button">DELETE</button>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+        <div class="bookshelf" id="done-read">
+            <h1>READED</h1>
+            <div class="book-header">
+                <div class="id">ID</div>
+                <div class="title">TITLE</div>
+                <div class="author">AUTHOR</div>
+                <div class="year">PUBLISH</div>
+
+                <div class="options">OPTIONS</div>
+            </div>
+            <div class="books">
+
+                <!-- <div class="book">
+
+                    <div class="id">2</div>
+                    <div class="title">Beautiful Girl</div>
+                    <div class="author">Lofi</div>
+                    <div class="year">1999</div>
+
+                    <div class="button-wrap-book">
+                        <button class="button book-button">not finished reading</button>
+                        <button class="button book-button">DELETE</button>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
