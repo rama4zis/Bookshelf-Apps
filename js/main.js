@@ -1,17 +1,5 @@
 var bookData = [];
 
-function generateBook(bookData) {
-    var book = {
-        id: bookData.id,
-        title: bookData.title,
-        author: bookData.author,
-        year: bookData.year, // Number
-        isComplete: bookData.isComplete, // Boolean
-    };
-    return book;
-}
-
-
 // get data from input 
 function getBookData() {
     var bookInput = {
